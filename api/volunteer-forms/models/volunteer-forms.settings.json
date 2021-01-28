@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "volunteer_forms",
+  "info": {
+    "name": "formvolunteer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": false
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "dinner",
+        "svp",
+        "admin",
+        "ndp",
+        "photography",
+        "design",
+        "others"
+      ],
+      "required": false
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

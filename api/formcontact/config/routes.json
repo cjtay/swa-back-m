@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/formcontacts",
+      "handler": "formcontact.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formcontacts/count",
+      "handler": "formcontact.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formcontacts/:id",
+      "handler": "formcontact.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formcontacts",
+      "handler": "formcontact.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/formcontacts/:id",
+      "handler": "formcontact.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/formcontacts/:id",
+      "handler": "formcontact.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
